@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(4, 4, 34);
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    
+}
+
+header{
+    
+    position:fixed;
+    text-align: center;  
+    color: beige;
+    width: 100%;
+    margin: 0%;
+    top: 0%;
+    height: 20vh;
+}
+
+header h1{
+    font-size: 3rem;
+    align-self: center;
+    background-color:rgb(4, 4, 34);
+    
+}
+
+#About-Me{
+    margin-top: 20vh;
+    background-image: url(/img/pexels-kelly-l-2874066.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    height: 70vh ;
+    padding-top: 10vh;
+    position: sticky;
+}
+
+#About-Me p{
+
+    padding: 2%;
+    color: beige;
+    font-size: 1.5rem;
+    
+        
+}
+
+#Formacio-Cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+    gap:10px;
+   
+    padding: 5%;
+
+}
+
+#Formacio-Cards .Card{
+    border: 2px rgb(156, 31, 31) solid;
+    text-align: center;
+    border-radius: 15px;
+    width: 370px;
+    height: 370px;
+    background-color: aliceblue;
+
+    
+}
+ .Card img{
+     height: 370px;
+     width: 370px;
+     border-radius: 50%;
+     
+ }
+
+#Valores{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+
+.V1{
+    background-color: bisque;
+    padding: 5%;
+}
+.V2{
+    color: bisque;
+    padding: 5%;
+}
+ #Languages{
+     background-color: rgb(4, 5, 65);
+     color: aliceblue;
+     padding: 2%;
+ }
+
+ #Experiencia{
+     background-color: rgb(154, 117, 189);
+ }
+
+ .Contact{
+    text-align: center;
+ }
+.Contact a{
+    margin: 0% 7%;
+    color: bisque;
+    font-size: 2rem;
+}
+ .Contact img{
+     height: 25px;
+
+ }
+
+ footer{
+     height: 20vh;
+ }
