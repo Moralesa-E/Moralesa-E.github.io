@@ -2,37 +2,38 @@ body{
     background-color: rgb(4, 4, 34);
     padding: 0%;
     margin: 0%;
-    text-align: center;
+    
     
 }
 
 header{
     
     position:fixed;
-    text-align: center;  
+ 
     color: beige;
     width: 100%;
     margin: 0%;
     top: 0%;
     height: 20vh;
+text-align: center;
+
 }
 
 header h1{
     font-size: 3rem;
-    align-self: center;
-    background-color:rgb(4, 4, 34);
+    background-color: rgb(4, 4, 34);
     
 }
 
 #About-Me{
-    margin-top: 20vh;
-    background-image: url(/img/pexels-kelly-l-2874066.jpg);
+    top: 20vh;
+    background-image: url(/img/pexels-timelockz-4497038.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
-    height: 70vh ;
-    padding-top: 10vh;
-    position: sticky;
+    height: 80vh ;
+    position: fixed;
+    z-index: -1;
 }
 
 #About-Me p{
@@ -40,29 +41,28 @@ header h1{
     padding: 2%;
     color: beige;
     font-size: 1.5rem;
-    
+    margin-top: 10vh;
         
 }
 
 #Formacio-Cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-
     gap:10px;
-   
+    margin-top: 100vh;
     padding: 5%;
-
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+    text-align: center;
 }
 
 #Formacio-Cards .Card{
     border: 2px rgb(156, 31, 31) solid;
-    text-align: center;
+    
     border-radius: 15px;
     width: 370px;
     height: 370px;
     background-color: aliceblue;
-
-    
+    text-align: center;
 }
  .Card img{
      height: 370px;
@@ -74,6 +74,7 @@ header h1{
 #Valores{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    text-align: center;
 }
 
 .V1{
@@ -83,30 +84,62 @@ header h1{
 .V2{
     color: bisque;
     padding: 5%;
+    background-color: rgb(4, 4, 34);
 }
  #Languages{
-     background-color: rgb(4, 5, 65);
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
      color: aliceblue;
-     padding: 2%;
+     padding: 3%;
+     text-align: center;
  }
 
+
  #Experiencia{
-     background-color: rgb(154, 117, 189);
+    background-color: rgb(4, 4, 34);
+     padding: 10% 0%;
+     color: aliceblue;
+     text-align: center;
+ }
+
+ #Experiencia h1{
+     margin: 0%;
  }
 
  .Contact{
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
  }
+
+
 .Contact a{
-    margin: 0% 7%;
+    margin: 1% 7%;
     color: bisque;
-    font-size: 2rem;
+    text-decoration: none;
+    
+}
+
+.Contact a:hover{
+    font-size: 30px;
 }
  .Contact img{
      height: 25px;
 
  }
 
+
+
  footer{
-     height: 20vh;
+     height: 18vh;
+     color: bisque;
+     background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+ }
+@media  (max-width: 600px)  {
+    footer {
+        height: 30vh;}
+}
+
+ footer h3{
+     margin: 0%;
  }
