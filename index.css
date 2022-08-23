@@ -1,0 +1,161 @@
+body{
+    background-color: #070f1d;
+    padding: 0%;
+    margin: 0%;
+}
+
+#Navbar-1{
+    top: 0vh;
+    background-color: #070f1d;
+    height: 8vh;
+    position: fixed;
+    z-index: 1;
+    width: 100%;  
+    opacity: 0;
+}
+
+#About-Me{
+    top: 0vh;
+    padding: 0% 10%;
+    background-image: url(/img/pexels-free-nature-stock-974471.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    height: 100vh ;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#About-Me h1{
+    font-size: 2.5rem;
+    color: antiquewhite;
+
+}
+
+#About-Me p{
+    margin-top: 5vh;
+    padding: 2%;
+    color: beige;
+    font-size: 1.5rem;       
+}
+
+/*--------------VALORES-----------------*/
+
+#Valores{
+    text-align: center;
+    height: 100vh;
+    margin-top: 100vh;
+    background:  #070f1d;
+    overflow: hidden;
+}
+.V1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 33vh;
+}
+.V2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    background-color: #070f1d;
+    height: 33vh;
+
+}
+#Valores p{
+    margin: 5% 10%;
+}
+
+
+#Formacio-Cards{
+    
+    padding: 5%;
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+    text-align: center;
+    height: 100vh;
+}
+#Formacio-Cards .Card{
+
+    width: 370px;
+    height: 70vh;
+    background-color: aliceblue;
+    text-align: center;
+}
+ .Card img{
+     height: 70px; 
+ }
+
+
+ #Experiencia{
+    background-color: #070f1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+    height: 100vh;
+ }
+
+ #Experiencia>div{
+    margin: 2% 15%;
+ }
+
+#Contact{
+    text-align: center;
+    color: bisque;
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+    overflow: hidden;
+    border-top: 2px wheat solid;
+    height: 10vh;
+    padding: 0% 10%;
+
+}
+
+#Contact a{
+    margin: 1% 7%;
+    color: bisque;
+    text-decoration: none;    
+}
+
+#Contact img{
+     height: 25px;
+ }
+
+
+/* 
+ #Languages{
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+     color: aliceblue;
+     padding: 0%;
+     text-align: center;
+     height: 30vh;
+     margin: 0%;
+ }
+*/
+@media  (max-width: 600px)  {
+    .V1{
+        height: auto;
+    }
+    .V2{
+        height: auto;
+    }
+    #Formacio-Cards .Card{
+        height: auto;
+    }
+
+    #Formacio-Cards{
+        height: auto;
+        width: 100%;
+    }
+    #Contact{
+        height: auto;
+    }
+} 
