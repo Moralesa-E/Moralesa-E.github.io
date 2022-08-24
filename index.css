@@ -11,7 +11,7 @@ body{
     position: fixed;
     z-index: 1;
     width: 100%;  
-    opacity: 0;
+    display: none;
 }
 
 #About-Me{
@@ -58,6 +58,7 @@ body{
     align-items: center;
     background-color: bisque;
     height: 33vh;
+    color: #070f1d;
 }
 .V2{
     display: flex;
@@ -74,35 +75,108 @@ body{
 }
 
 
-#Formacio-Cards{
-    
-    padding: 5%;
+/*----------------------------PROYECTOS-----------------------*/
+#Proyectos{
+    height: 100vh;
     background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
-    text-align: center;
+    overflow: hidden;
+    /* background-color: aqua; */
+    color: #ffe4c4;
+}
+/*----------------------TECNOLOGIAS-----------------------------*/
+
+#Tecnologias{
+    
+    padding: 1% 5%;
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+
     height: 100vh;
 }
-#Formacio-Cards .Card{
 
-    width: 370px;
-    height: 70vh;
-    background-color: aliceblue;
+#Tecnologias h3{
     text-align: center;
 }
- .Card img{
+
+.Tec-Header{
+    display: flex;
+    align-items: center;
+    color: #ffe4c4;
+}
+.Tec-Header button{
+   padding: 5px;
+   border: #ffe4c4 2px solid;
+   color: #ffe4c4;
+   margin: 0% 5%;
+   background-color: #070f1d;
+}
+#Tecnologias .Card{
+    margin-top: 5%;
+    width: auto;
+    height: 50vh;
+    background-color: aliceblue;
+    padding: 1%;
+
+}
+
+#Tecnologias .CardO{
+    margin-top: 5%;
+    width: auto;
+    height: 80vh;
+    background-color: aliceblue;
+    padding: 1%;
+
+}
+
+#Tecnologias img{
      height: 70px; 
+ }
+ .Card-ProGeneral{
+    margin-top: 6.5vh;
+    background-color: aliceblue;
+    padding: 1%;
+    
+ }
+ .Card-ProGeneral ul {
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #Tecnologias ul li{
+
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .O-Conocimientos>h1{
+    color: #ffe4c4;
+    padding: 1% 0%;
  }
 
 
+/*-----------------EXPERIENCIA---------------------*/
+
  #Experiencia{
+
     background-color: #070f1d;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
-    text-align: center;
+    color: bisque;
     height: 100vh;
+
  }
+
+ #Experiencia h3{
+    color: aqua;
+    text-align: center;
+ }
+ #Experiencia ul{
+    list-style: none;
+    margin: 2%;
+} 
+#Experiencia ul li::before{
+    content: "🚀    ";
+} 
 
  #Experiencia>div{
     margin: 2% 15%;
@@ -110,7 +184,7 @@ body{
 
 #Contact{
     text-align: center;
-    color: bisque;
+    color: #ffe4c4;
     background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
     overflow: hidden;
     border-top: 2px wheat solid;
@@ -141,20 +215,32 @@ body{
  }
 */
 @media  (max-width: 600px)  {
+
+    #About-Me p{
+      font-size: 1rem;
+    }
     .V1{
-        height: auto;
+        height:  16.6vh;
     }
     .V2{
-        height: auto;
+        height: 16.6vh;
     }
-    #Formacio-Cards .Card{
+    #Tecnologias .Card{
         height: auto;
     }
 
-    #Formacio-Cards{
+    #Tecnologias{
         height: auto;
         width: 100%;
     }
+
+    #Experiencia h3 {
+        font-size: larger;
+    }
+    #Experiencia>div{
+        margin: 2% 10%;
+     }
+    
     #Contact{
         height: auto;
     }

@@ -5,11 +5,11 @@ window.addEventListener('scroll',function(){
   let Navbar = document.getElementById('Navbar-1');
   let WsY = window.scrollY
 
-  if(WsY>(NavVisibility+50)){
-    Navbar.style.opacity=0;
+  if(WsY>(NavVisibility+50) || WsY===0){
+    Navbar.style.display="none";
     NavVisibility = WsY
   }else if(WsY<NavVisibility){
-    Navbar.style.opacity=1
+    Navbar.style.display="block"
     NavVisibility = WsY
   }
   // const O1 =0;
