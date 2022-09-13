@@ -14,6 +14,12 @@ body{
     display: none;
 }
 
+.head-section{   
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
 #About-Me{
     top: 0vh;
     padding: 0% 10%;
@@ -82,6 +88,17 @@ body{
     overflow: hidden;
     /* background-color: aqua; */
     color: #ffe4c4;
+    padding: 0%;
+
+}
+.height-100vh-3{
+    height: 93vh;
+    overflow: hidden;
+}
+#Proyectos img{
+    
+    width: 100%;
+   margin: 0%;
 }
 /*----------------------TECNOLOGIAS-----------------------------*/
 
@@ -89,7 +106,6 @@ body{
     
     padding: 1% 5%;
     background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
-
     height: 100vh;
 }
 
@@ -97,10 +113,12 @@ body{
     text-align: center;
 }
 
+
 .Tec-Header{
     display: flex;
     align-items: center;
     color: #ffe4c4;
+    height: 7vh;
 }
 .Tec-Header button{
    padding: 5px;
@@ -109,33 +127,10 @@ body{
    margin: 0% 5%;
    background-color: #070f1d;
 }
-#Tecnologias .Card{
-    margin-top: 5%;
-    width: auto;
-    height: 50vh;
-    background-color: aliceblue;
-    padding: 1%;
 
+.caro-item{
+    height: 100%;
 }
-
-#Tecnologias .CardO{
-
-    margin-top: 5%;
-    
-    height: 80vh;
-    background-color: aliceblue;
-    padding: 1%;
-    
-}
-
-#Tecnologias .CardO>div{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    height: 60vh;
-}
-
 #Tecnologias img{
      height: 70px; 
  }
@@ -147,9 +142,10 @@ body{
  }
 .Row-100{
     height: 100%;
+
 }
 
- .O-Conocimientos>h1{
+ #Tecnologias h1{
     color: #ffe4c4;
     padding: 1% 0%;
  }
@@ -160,14 +156,16 @@ body{
  #Experiencia{
 
     background-color: #070f1d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     color: bisque;
     height: 100vh;
     overflow: hidden;
  }
-
+ #Experiencia .Exp-Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 93vh;
+ }
  #Experiencia h3{
     color: aqua;
     text-align: center;
@@ -180,7 +178,7 @@ body{
 #Experiencia ul li::before{
     content: "🚀    ";
 } 
-
+/* ------------------contacto-------------------------- */
 #Contact{
     text-align: center;
     color: #ffe4c4;
@@ -188,8 +186,7 @@ body{
     overflow: hidden;
     border-top: 2px wheat solid;
     height: 10vh;
-    padding: 0% 10%;
-
+    display: flex;
 }
 
 #Contact a{
@@ -213,6 +210,24 @@ body{
      margin: 0%;
  }
 */
+
+@media (max-width:960px) {
+    .height-100vh-3{
+        height: 32vh;   
+    }
+    #Proyectos img{
+    
+        /* width: 100%; */
+        height: 25vh;
+        width: auto;
+    }
+    #Proyectos{
+        height: auto;
+    }
+    .caro-item{
+        height: 55vh;
+    }
+}
 @media  (max-width: 600px)  {
 
     #About-Me p{
@@ -224,13 +239,13 @@ body{
     .V2{
         height: 16.6vh;
     }
-    #Tecnologias .Card{
-        height: auto;
-    }
 
     #Tecnologias{
         height: auto;
         width: 100%;
+    }
+    .caro-item{
+        height: 73vh;
     }
     #Experiencia{
         height: auto;
@@ -249,5 +264,13 @@ body{
     }
     .Row-100{
         height: auto;
+    }
+
+
+    .R-130{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
     }
 } 
