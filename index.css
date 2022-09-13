@@ -118,13 +118,18 @@ body{
     padding: 1% 5%;
     background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
     height: 100vh;
+    color: #ffe4c4;
+
 }
 
 #Tecnologias h3{
     text-align: center;
 }
 
-
+.Card-01{
+    border: 1px #ffe4c4 solid;
+    
+}
 .Tec-Header{
     display: flex;
     align-items: center;
@@ -144,7 +149,13 @@ body{
 }
 #Tecnologias img{
      height: 70px; 
+     filter: drop-shadow(0 0 0.75rem rgb(20, 210, 220));
  }
+
+ #Tecnologias img:hover{
+
+    filter: drop-shadow(0 0 1.5rem rgb(20, 210, 220));
+}
  .Card-ProGeneral{
     margin-top: 6.5vh;
     background-color: aliceblue;
@@ -236,7 +247,11 @@ body{
         height: auto;
     }
     .caro-item{
-        height: 55vh;
+        height: 60vh;
+    }
+    #Tecnologias{
+        height: auto;
+        
     }
 }
 @media  (max-width: 600px)  {
@@ -256,7 +271,7 @@ body{
         width: 100%;
     }
     .caro-item{
-        height: 75vh;
+        height: 80vh;
     }
     #Experiencia{
         height: auto;
