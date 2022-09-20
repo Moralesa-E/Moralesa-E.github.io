@@ -29,6 +29,9 @@ body{
     height: 7vh;
     display: flex;
     align-items: center;
+    color: #ffe4c4;
+
+    
 }
 
 #About-Me{
@@ -45,6 +48,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 #About-Me h1{
     font-size: 2.5rem;
@@ -64,7 +68,7 @@ body{
 #Valores{
     text-align: center;
     height: 100vh;
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
     background:  #070f1d;
     overflow: hidden;
 }
@@ -74,7 +78,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     background-color: bisque;
-    height: 33vh;
+    height: 31vh;
     color: #070f1d;
 }
 .V2{
@@ -84,8 +88,15 @@ body{
     align-items: center;
     color: bisque;
     background-color: #070f1d;
-    height: 33vh;
+    height: 31vh;
 
+}
+
+.V3{
+    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
+    height: 31vh;
+    color: #ffe4c4;
+    padding: 2%;
 }
 #Valores p{
     margin: 0% 10%;
@@ -100,16 +111,22 @@ body{
     /* background-color: aqua; */
     color: #ffe4c4;
     padding: 0%;
-
+    margin-top: 100vh;
 }
 .height-100vh-3{
     height: 93vh;
     overflow: hidden;
+    
 }
 #Proyectos img{
     
     width: 100%;
    margin: 0%;
+}
+
+.About-Project{
+    height: 100%;
+    width: 100%;
 }
 /*----------------------TECNOLOGIAS-----------------------------*/
 
@@ -181,6 +198,7 @@ body{
     color: bisque;
     height: 100vh;
     overflow: hidden;
+    border-bottom: 1px #ffe4c4 solid;
  }
  #Experiencia .Exp-Main{
     display: flex;
@@ -221,18 +239,6 @@ body{
      height: 25px;
  }
 
-
-/* 
- #Languages{
-    background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
-     color: aliceblue;
-     padding: 0%;
-     text-align: center;
-     height: 30vh;
-     margin: 0%;
- }
-*/
-
 @media (max-width:960px) {
     .height-100vh-3{
         height: 32vh;   
@@ -253,19 +259,38 @@ body{
         height: auto;
         
     }
+    .About-Project{
+        position: absolute;
+        background-color: transparent;
+        bottom: 4rem;
+        height: auto;
+        background-color: #11203e;
+        opacity: 0.6;
+
+    }
+    .About-Project:hover{
+        opacity: 1;
+    
+    }
 }
 @media  (max-width: 600px)  {
 
     #About-Me p{
       font-size: 1rem;
+
     }
+    #AValores{
+        height: auto;
+      }
     .V1{
         height:  16.6vh;
     }
     .V2{
         height: 16.6vh;
     }
-
+    .V3{
+        height: auto;
+    }
     #Tecnologias{
         height: auto;
         width: 100%;
@@ -291,12 +316,13 @@ body{
     .Row-100{
         height: auto;
     }
-
-
     .R-130{
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
+    }
+    .About-Project{
+        bottom: 3rem;
     }
 } 
