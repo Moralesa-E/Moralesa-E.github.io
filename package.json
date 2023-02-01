@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Moralesa-E/Moralesa-E.github.io#readme",
   "dependencies": {
-    "bootstrap": "^5.2.1",
-    "gh-pages": "^4.0.0"
+    "bootstrap": "^5.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
