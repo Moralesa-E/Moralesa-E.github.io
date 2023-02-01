@@ -139,7 +139,7 @@ body{
     height: 180px;
 }
 #About-Me .planet img{
-    height: 150px;
+    height: 140px;
 }
 
 .spaceship{
@@ -275,7 +275,8 @@ body{
     
     padding:2% 7% 5% 7%;
     background:  linear-gradient(180deg,#070f1d 10%,#11203e 100%);
-    height: 100vh;
+
+    height: 800px;
     color: #ffe4c4;
     
 }
