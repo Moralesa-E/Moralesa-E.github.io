@@ -87,6 +87,11 @@ body{
     align-items: center;
     width: 100vw;
 }
+#main-About{
+    max-height: 700px;
+
+    padding: 0%;
+}
 #About-Me h1, #About-Me h2{
 
     color: antiquewhite;
@@ -96,8 +101,6 @@ body{
 }
 
 #About-Me p{
-    margin-top: 2.5vh;
-    padding: 2%;
     color: beige;
     font-size: 1.3rem;       
 }
@@ -125,18 +128,18 @@ body{
 
 .cont-img{
 
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #About-Me img{
-    height: 200px;
+    height: 180px;
 }
 #About-Me .planet img{
-    height: 180px;
+    height: 150px;
 }
 
 .spaceship{
@@ -366,6 +369,12 @@ img:hover +span {
         opacity: 1;
     
     }
+    .About-imgs{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding:50px 0px ;
+    }
 }
 
 /* ------------------ SMARTPHONE-------------------------- */
@@ -429,12 +438,7 @@ img:hover +span {
         height: 300px;
 
     }
-    .About-imgs{
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding:50px 0px ;
-    }
+   
 
     .cont-img{
 
